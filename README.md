@@ -18,4 +18,4 @@ This extension hides the following YouTube elements:
 right of thumbnails when they are hovered over.
 
 ### Screenshot
-<img src="https://raw.githubusercontent.com/elliotwaite/cleantube/master/screenshot/screenshot.png">
+<img src="https://raw.githubusercontent.com/elliotwaite/cleantube/master/images/screenshot.png">
