@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "CleanTube",
-  "version": "0.2",
+  "version": "0.3",
   "description": "YouTube with less clutter.",
   "author": "Elliot Waite",
   "icons": {
@@ -23,12 +23,16 @@
     "persistent": false
   },
   "content_scripts": [{
-    "matches": ["*://*.youtube.com/*"],
+    "matches": [
+      "*://*.youtube.com/*",
+      "*://*.youtube-nocookie.com/*"
+    ],
     "js": ["content.js"],
     "all_frames": true
   }],
   "permissions": [
     "*://*.youtube.com/*",
+    "*://*.youtube-nocookie.com/*",
     "storage"
   ]
 }
