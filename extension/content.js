@@ -25,8 +25,6 @@ chrome.storage.sync.get(DEFAULT_SETTINGS, function(storedSettings) {
     cssFiles.push('css/thumbnail-hover-overlays.css')
   }
 
-  console.log('cssFiles', cssFiles)
-
   if (cssFiles.length > 0) {
     chrome.runtime.sendMessage({
       cssFiles,
