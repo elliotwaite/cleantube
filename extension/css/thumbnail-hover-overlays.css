@@ -1,5 +1,5 @@
-/* The "Watch later" and "Add to queue" icon buttons that appear over the top
-   right of thumbnails when they are hovered over. */
-#hover-overlays.ytd-thumbnail{
-  display:none;
+/* Removes the "Watch later" and "Add to queue" icon buttons that appear over
+   the top right of thumbnails when they are hovered over. */
+#hover-overlays.ytd-thumbnail {
+  display: none;
 }

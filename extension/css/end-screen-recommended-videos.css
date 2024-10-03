@@ -1,4 +1,4 @@
-/* The wall of recommended videos that appear at the end of a video. */
-.ytp-endscreen-content{
-  display:none;
+/* Removes the wall of recommended videos that appear at the end of a video. */
+.ytp-endscreen-content {
+  display: none;
 }

@@ -1,0 +1,9 @@
+/* Removes the "Includes paid promotion" overlay from thumbnails. */
+ytm-paid-content-overlay-renderer.YtmPaidContentOverlayHost {
+  display: none;
+}
+
+/* Removes the "Includes paid promotion" overlay from videos. */
+div.ytp-paid-content-overlay {
+  display: none;
+}

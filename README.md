@@ -11,11 +11,15 @@ https://addons.mozilla.org/en-US/firefox/addon/cleantube/
 YouTube with less clutter.
 
 This extension hides the following YouTube elements:
-* The row of recommended videos that appear when a video is paused.
-* The wall of recommended videos that appear at the end of a video.
-* Channel watermark logos that appear in the bottom right of videos.
-* The "Watch later" and "Add to queue" icon buttons that appear over the top
-right of thumbnails when they are hovered over.
+
+- The row of recommended videos that appear when a video is paused.
+- The wall of recommended videos that appear at the end of a video.
+- Channel watermark logos that appear in the bottom right of videos.
+- The "Watch later" and "Add to queue" icon buttons that appear over the top
+  right of thumbnails when they are hovered over.
+- The "Includes paid promotion" overlays that appear over thumbnails and
+  videos.
 
 ### Screenshot
+
 <img src="https://raw.githubusercontent.com/elliotwaite/cleantube/master/images/screenshot.png">

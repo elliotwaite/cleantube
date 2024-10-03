@@ -3,6 +3,7 @@ const DEFAULT_SETTINGS = {
   endScreenRecommendedVideos: true,
   channelWatermarks: true,
   thumbnailHoverOverlays: true,
+  paidContentOverlays: true,
 }
 
 let settings = DEFAULT_SETTINGS

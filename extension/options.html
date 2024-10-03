@@ -1,84 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            color: rgb(22, 24, 35);
-        }
-        .content {
-            padding: 16px;
-            width: 360px;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        label {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            padding: 12px;
-            align-items: top;
-            cursor: pointer;
-            user-select: none;
-            border-radius: 8px;
-        }
-        .interaction {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            border-radius: 8px;
-            background-color: rgb(22, 24, 35);
-            opacity: 0;
-        }
-        label:hover .interaction.hover {
-            opacity: 0.06;
-        }
-        .interaction.active {
-            transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        }
-        label:active .interaction.active {
-            opacity: 0.0638;
-            transition-duration: 0ms;
-        }
-        .description {
-            padding-left: 8px;
-        }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        color: rgb(22, 24, 35);
+      }
+      .content {
+        padding: 16px;
+        width: 360px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      label {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+        align-items: top;
+        cursor: pointer;
+        user-select: none;
+        border-radius: 8px;
+      }
+      .interaction {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        background-color: rgb(22, 24, 35);
+        opacity: 0;
+      }
+      label:hover .interaction.hover {
+        opacity: 0.06;
+      }
+      .interaction.active {
+        transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+      label:active .interaction.active {
+        opacity: 0.0638;
+        transition-duration: 0ms;
+      }
+      .description {
+        padding-left: 8px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="content">
+      <label for="pausedRecommendedVideos">
+        <div class="interaction hover"></div>
+        <div class="interaction active"></div>
+        <div><input type="checkbox" id="pausedRecommendedVideos" /></div>
+        <div class="description">
+          Hide the row of recommended videos that appear when a video is paused.
+        </div>
+      </label>
+      <label for="endScreenRecommendedVideos">
+        <div class="interaction hover"></div>
+        <div class="interaction active"></div>
+        <div><input type="checkbox" id="endScreenRecommendedVideos" /></div>
+        <div class="description">
+          Hide the wall of recommended videos that appear at the end of a video.
+        </div>
+      </label>
+      <label for="channelWatermarks">
+        <div class="interaction hover"></div>
+        <div class="interaction active"></div>
+        <div><input type="checkbox" id="channelWatermarks" /></div>
+        <div class="description">
+          Hide channel watermark logos that appear in the bottom right of
+          videos.
+        </div>
+      </label>
+      <label for="thumbnailHoverOverlays">
+        <div class="interaction hover"></div>
+        <div class="interaction active"></div>
+        <div><input type="checkbox" id="thumbnailHoverOverlays" /></div>
+        <div class="description">
+          Hide the "Watch later" and "Add to queue" icon buttons that appear
+          over the top right of thumbnails when they are hovered over.
+        </div>
+      </label>
+      <label for="paidContentOverlays">
+        <div class="interaction hover"></div>
+        <div class="interaction active"></div>
+        <div><input type="checkbox" id="paidContentOverlays" /></div>
+        <div class="description">
+          Hide the "Includes paid promotion" overlays that appear over
+          thumbnails and videos.
+        </div>
+      </label>
+    </div>
 
-<div class="content">
-    <label for="pausedRecommendedVideos">
-        <div class="interaction hover"></div>
-        <div class="interaction active"></div>
-        <div><input type="checkbox" id="pausedRecommendedVideos"></div>
-        <div class="description">Hide the row of recommended videos that appear when a video is paused.</div>
-    </label>
-    <label for="endScreenRecommendedVideos">
-        <div class="interaction hover"></div>
-        <div class="interaction active"></div>
-        <div><input type="checkbox" id="endScreenRecommendedVideos"></div>
-        <div class="description">Hide the wall of recommended videos that appear at the end of a video.</div>
-    </label>
-    <label for="channelWatermarks">
-        <div class="interaction hover"></div>
-        <div class="interaction active"></div>
-        <div><input type="checkbox" id="channelWatermarks"></div>
-        <div class="description">Hide channel watermark logos that appear in the bottom right of videos.</div>
-    </label>
-    <label for="thumbnailHoverOverlays">
-        <div class="interaction hover"></div>
-        <div class="interaction active"></div>
-        <div><input type="checkbox" id="thumbnailHoverOverlays"></div>
-        <div class="description">Hide the "Watch later" and "Add to queue" icon buttons that appear over the top right of thumbnails when they are hovered over.</div>
-    </label>
-</div>
-
-<script src="options.js"></script>
-
-</body>
+    <script src="options.js"></script>
+  </body>
 </html>

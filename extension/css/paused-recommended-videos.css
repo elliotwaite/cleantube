@@ -1,4 +1,4 @@
-/* The row of recommended videos that appear when a video is paused. */
-.ytp-pause-overlay{
-  display:none;
+/* Removes the row of recommended videos that appear when a video is paused. */
+.ytp-pause-overlay {
+  display: none;
 }
