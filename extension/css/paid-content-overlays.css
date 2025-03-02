@@ -1,5 +1,5 @@
 /* Removes the "Includes paid promotion" overlay from thumbnails. */
-ytm-paid-content-overlay-renderer.YtmPaidContentOverlayHost {
+ytm-paid-content-overlay-renderer.ytmPaidContentOverlayHost {
   display: none;
 }
 
