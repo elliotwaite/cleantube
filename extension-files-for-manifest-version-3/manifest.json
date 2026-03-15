@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "CleanTube",
+  "version": "0.7",
+  "description": "YouTube with less clutter.",
+  "author": "Elliot Waite",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{080a636f-b3ee-4e4c-b7ce-0eda7ee95868}"
+    }
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": "icon128.png",
+    "default_title": "Options",
+    "default_popup": "options.html"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.youtube-nocookie.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.youtube-nocookie.com/*"
+  ]
+}
